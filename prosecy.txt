@@ -1,0 +1,8 @@
+#!/bin/bash
+
+plik="procesy.txt"
+katalog="procesy"
+
+mkdir -p "${katalog}"
+
+ps -aux > "${katalog}/${plik}"
