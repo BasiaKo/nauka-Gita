@@ -4,4 +4,4 @@ if ! <possible failing command> ; then
 	echo "failure ignored";
 fi;
 
-rm -rf somedir || exist_on_error "Failed to remove the directory"
+rm -rf somedir || exit_on_error "Failed to remove the directory"
